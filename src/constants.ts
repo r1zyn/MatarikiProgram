@@ -1,3 +1,5 @@
+export const ENDPOINT: string = "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND='301'&OBJ_DATA='YES'&MAKE_EPHEM='YES'&EPHEM_TYPE='OBSERVER'&CENTER='Geocentric'";
+
 export const EXCESSIVE_TEXT: string = 
 `
 Column meaning:
