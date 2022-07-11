@@ -1,0 +1,12 @@
+{
+    "watch": [
+        "**/*.js",
+        "**/*.ts",
+        "**/*.json"
+    ],
+    "ext": "js,ts,json",
+    "ignore": [
+        "node_modules"
+    ],
+    "exec": "tsc && node build/index.js"
+}

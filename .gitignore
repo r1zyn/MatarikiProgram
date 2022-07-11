@@ -1,0 +1,8 @@
+# Dependencies
+node_modules/
+
+# Compilation
+build/
+
+# Yarn
+yarn-error.log
