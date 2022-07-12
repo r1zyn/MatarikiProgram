@@ -5,7 +5,7 @@
     "main": "build/index.js",
     "scripts": {
         "dev": "nodemon",
-        "program": "node ."
+        "program": "tsc && node ."
     },
     "repository": "https://github.com/r1zyn/MatarikiProgram",
     "license": "MIT",

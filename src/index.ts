@@ -21,6 +21,7 @@ terminal.question("[process] Enter a year: ", (year: string): void => {
             .then(async (res): Promise<APIResponse> => await res.json())
             .then((res: APIResponse): void => {
                 res.result = res.result.replace(EXCESSIVE_TEXT, "");
+                fs.writeFileSync("test.txt", res.result.split(" ").toString());
                 fs.writeFileSync("output.txt", res.result);
                 console.log(`[process] Completed GET request, view the response in ${process.cwd()}\\output.txt (hold ctrl and click on the file text)`);
             })
