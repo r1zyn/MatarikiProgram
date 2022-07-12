@@ -10,7 +10,7 @@ const terminal: readline.Interface = readline.createInterface({
 });
 
 terminal.question("[process] Enter a year: ", (year: string): void => {
-    const endpoint: string = `https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND='301'&OBJ_DATA='YES'&MAKE_EPHEM='YES'&EPHEM_TYPE='OBSERVER'&CENTER='Geocentric'&START_TIME='${encodeURIComponent(`${year}-Jun-1 00:00:00`)}'&STOP_TIME='${encodeURIComponent(`${year}-Jul-31 23:59:59`)}'&TIME_ZONE='+12:00'&STEP_SIZE='1d'`;
+    const endpoint: string = `https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND='301'&OBJ_DATA='YES'&MAKE_EPHEM='YES'&EPHEM_TYPE='OBSERVER'&CENTER='Geocentric'&START_TIME='${encodeURIComponent(`${year}-Jun-19 00:00:00`)}'&STOP_TIME='${encodeURIComponent(`${year}-Jul-31 23:59:59`)}'&TIME_ZONE='+12:00'&STEP_SIZE='1d'`;
     console.log(`[process] Initiated GET request to ${endpoint}`);
     
     if (!parseInt(year)) {
@@ -20,8 +20,7 @@ terminal.question("[process] Enter a year: ", (year: string): void => {
         fetch(endpoint)
             .then(async (res): Promise<APIResponse> => await res.json())
             .then((res: APIResponse): void => {
-                res.result = res.result.replace(EXCESSIVE_TEXT, "");
-                fs.writeFileSync("test.txt", res.result.split(" ").toString());
+                res.result = res.result.replace(EXCESSIVE_TEXT, "").replaceAll("$$SOE", "").replaceAll("$$EOE", "");
                 fs.writeFileSync("output.txt", res.result);
                 console.log(`[process] Completed GET request, view the response in ${process.cwd()}\\output.txt (hold ctrl and click on the file text)`);
             })
