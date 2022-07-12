@@ -1,5 +1,3 @@
-export const ENDPOINT: string = "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND='301'&OBJ_DATA='YES'&MAKE_EPHEM='YES'&EPHEM_TYPE='OBSERVER'&CENTER='Geocentric'";
-
 export const EXCESSIVE_TEXT: string = 
 `
 Column meaning:
@@ -25,6 +23,8 @@ may be defined for that location.
   Any 'b' symbol in the 1st-column denotes a B.C. date. First-column blank
 (" ") denotes an A.D. date. Calendar dates prior to 1582-Oct-15 are in the
 Julian calendar system. Later calendar dates are in the Gregorian system.
+
+  NOTE: A time-zone correction has been requested. See header.
 
   NOTE: "n.a." in output means quantity "not available" at the print-time.
  

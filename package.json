@@ -2,9 +2,10 @@
     "name": "matarikiprogram",
     "version": "1.0.0",
     "description": "A program to determine the date Matariki will occur on a given year.",
-    "main": "index.js",
+    "main": "build/index.js",
     "scripts": {
-        "program": "nodemon"
+        "dev": "nodemon",
+        "program": "node ."
     },
     "repository": "https://github.com/r1zyn/MatarikiProgram",
     "license": "MIT",
