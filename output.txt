@@ -24,7 +24,7 @@
 
 
 *******************************************************************************
-Ephemeris / API_USER Mon Jul 11 02:39:06 2022 Pasadena, USA      / Horizons    
+Ephemeris / API_USER Mon Jul 11 18:07:57 2022 Pasadena, USA      / Horizons    
 *******************************************************************************
 Target body name: Moon (301)                      {source: DE441}
 Center body name: Earth (399)                     {source: DE441}
@@ -47,8 +47,8 @@ Rel. lght bnd GM: 1.3271E+11, 3.9860E+05 km^3/s^2
 Atmos refraction: NO (AIRLESS)
 RA format       : HMS
 Time format     : CAL 
-EOP file        : eop.220707.p220930                                           
-EOP coverage    : DATA-BASED 1962-JAN-20 TO 2022-JUL-07. PREDICTS-> 2022-SEP-29
+EOP file        : eop.220710.p221003                                           
+EOP coverage    : DATA-BASED 1962-JAN-20 TO 2022-JUL-10. PREDICTS-> 2022-OCT-02
 Units conversion: 1 au= 149597870.700 km, c= 299792.458 km/s, 1 day= 86400.0 s 
 Table cut-offs 1: Elevation (-90.0deg=NO ),Airmass (>38.000=NO), Daylight (NO )
 Table cut-offs 2: Solar elongation (  0.0,180.0=NO ),Local Hour Angle( 0.0=NO )
