@@ -25,6 +25,7 @@ yarn program
 
 ## How it works
 The program will make a `GET` request to the [JPL Horizons API](https://ssd-api.jpl.nasa.gov/doc/horizons.html) using [`node-fetch`](https://npmjs.com/package/node-fetch). The response will then be written to [`output.txt`](./output.txt) after omitting unnecessary text in the response.
+TypeScript files will be compiled to the `build` directory (only generated once `npm run program` or `yarn program` is executed).
 
 ## License
 :copyright: 2022 EV. All rights reserved. This project is licensed under the [GPL-3.0 license](./LICENSE).
