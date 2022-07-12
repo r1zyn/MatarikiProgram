@@ -10,7 +10,7 @@ const terminal: readline.Interface = readline.createInterface({
 });
 
 terminal.question("[process] Enter a year: ", (year: string): void => {
-    const endpoint: string = `https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND='301'&OBJ_DATA='YES'&MAKE_EPHEM='YES'&EPHEM_TYPE='OBSERVER'&CENTER='Geocentric'&START_TIME='${encodeURIComponent(`${year}-Jan-1 00:00:00`)}'&STOP_TIME='${encodeURIComponent(`${year}-Dec-31 23:59:59`)}'&TIME_ZONE='+12:00'`;
+    const endpoint: string = `https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND='301'&OBJ_DATA='YES'&MAKE_EPHEM='YES'&EPHEM_TYPE='OBSERVER'&CENTER='Geocentric'&START_TIME='${encodeURIComponent(`${year}-Jun-1 00:00:00`)}'&STOP_TIME='${encodeURIComponent(`${year}-Jul-31 23:59:59`)}'&TIME_ZONE='+12:00'`;
     console.log(`[process] Initiated GET request to ${endpoint}`);
     
     if (!parseInt(year)) {
