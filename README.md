@@ -22,3 +22,6 @@ npm run program
 or
 yarn program
 ```
+
+## License
+:copyright: 2022 EV. All rights reserved. This project is licensed under the [GPL-3.0 license](./LICENSE).
