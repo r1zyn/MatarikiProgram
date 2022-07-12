@@ -15,7 +15,7 @@ yarn install
 ```
 
 ## Running the program
-The script for running the program is defined in the `scripts` property in [`pacage.json`](./package.json)
+The script for running the program is defined in the `scripts` property in [`package.json`](./package.json)
 
 ```cmd
 npm run program
