@@ -24,7 +24,7 @@ const options: TableOptions = {
 };
 
 terminal.question("[process] Enter a year: ", (year: string): void => {
-    const endpoint: string = `https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND='301'&OBJ_DATA='YES'&MAKE_EPHEM='YES'&EPHEM_TYPE='OBSERVER'&CENTER='Geocentric'&START_TIME='${encodeURIComponent(`${year}-Jun-19 00:00:00`)}'&STOP_TIME='${encodeURIComponent(`${year}-Jul-31 23:59:59`)}'&TIME_ZONE='+12:00'&STEP_SIZE='12h'`;
+    const endpoint: string = `https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND='301'&OBJ_DATA='YES'&MAKE_EPHEM='YES'&EPHEM_TYPE='OBSERVER'&CENTER='Geocentric'&START_TIME='${encodeURIComponent(`${year}-Jun-19 00:00:00`)}'&STOP_TIME='${encodeURIComponent(`${year}-Jul-31 23:59:59`)}'&TIME_ZONE='+12:00'&STEP_SIZE='6h'`;
     console.log(`[process] Initiated GET request to ${endpoint}`);
 
     if (!parseInt(year)) {
@@ -35,19 +35,36 @@ terminal.question("[process] Enter a year: ", (year: string): void => {
             .then(async (res: Response): Promise<APIResponse> => await res.json())
             .then((res: APIResponse): void => {
                 const result: string = res.result
-                    .slice(6500, 89000 - 28)
+                    .slice(6500, 171446)
                     .replaceAll(/\s{2,}/g, " ");
 
                 const dates: string[] = [ ...result.matchAll(/(\d{4}\-[A-Z][a-z]{2}\-\d{2}\s\d{2}\:\d{2})/g) ]
                     .map((m: RegExpMatchArray): string => m[0]);
 
                 const stos: string[] = [];
-                let num: number = 0;
+                let num: number = 1;
                 
                 for (let i: number = 0; i < dates.length; i++) {
-                    const index = num === 0 ? result.split(" ").indexOf(dates[i].replace(/(\s\d{2}\:\d{2})/g, "")) + 51 : result.split(" ").indexOf(dates[i].replace(/(\s\d{2}\:\d{2})/g, "")) + 51 + 99;
-                    stos.push(result.split(" ")[index]);
-                    num === 0 ? num = 1 : num = 0;
+                    switch (num) {
+                        case 1: {
+                            stos.push(result.split(" ")[result.split(" ").indexOf(dates[i].replace(/(\s\d{2}\:\d{2})/g, "")) + 51]);
+                            num = 2;
+                            break;
+                        }
+
+                        case 2: {
+                            stos.push(result.split(" ")[result.split(" ").indexOf(dates[i].replace(/(\s\d{2}\:\d{2})/g, "")) + 51 + 99]);
+                            num = 3;
+                            break;
+                        }
+
+                        case 3: {
+                            stos.push(result.split(" ")[result.split(" ").indexOf(dates[i].replace(/(\s\d{2}\:\d{2})/g, "")) + 51 + 99 + 99]);
+                            num = 1;
+                            break;
+                        }
+                    }
+                    // 156 for one sto, 360 for a full line, 46 lines in total
                 }
 
                 const data: Data[] = [];
