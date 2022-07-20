@@ -1,3 +1,8 @@
+/**
+ * Function that maps the day of the week to the corresponding day name.
+ * @param {number} day The day of the week (0-6)
+ * @returns string
+ */
 export default function getDay(day: number): string {
     switch (day) {
         case 0: return "Sunday";

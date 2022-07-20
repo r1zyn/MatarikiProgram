@@ -1,3 +1,8 @@
+/**
+ * Function that maps the month to the corresponding month name.
+ * @param {number} month The month (0-11)
+ * @returns {string}
+ */
 export default function getMonth(month: number): string {
     switch (month) {
         case 0: return "January";
