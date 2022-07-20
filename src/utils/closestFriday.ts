@@ -1,10 +1,26 @@
 /**
  * Gets the Friday closest to a given date.
- * @param {Date} date The date to get the closest Friday to
+ * @param {Date} fromDate The date to get the closest Friday to
  * @returns {Date}
  */
-export default function closestFriday(date: Date): Date {
-    const day: number = date.getDay(); // Gets the day from the date
-    const diff: number = (day < 5) ? (5 - day) : (12 - day); // Gets the duration between the date and Friday
-    return new Date(date.getTime() + diff * 24 * 60 * 60 * 1000); // Returns the Date object for the closest Friday
+export default function closestFriday(fromDate: Date): Date {
+    const returnValue: Date = new Date(fromDate);
+
+    const difference: number = getDifferenceBetweenDays(5, fromDate.getDay());
+    returnValue.setDate(returnValue.getDate() + difference);
+
+    return returnValue;
+};
+
+/**
+ * Function that gets the difference between two days.
+ * @param {number} start The starting date
+ * @param {number} end The ending date
+ * @param {number} weekLength The length of a week
+ * @returns {number}
+ */
+export function getDifferenceBetweenDays(start: number, end: number, weekLength: number = 7): number {
+    const a: number = start - end;
+    const b: number = weekLength - (start - end - 1);
+    return (a > b) ? - Math.min(a, b) : Math.min(a, b);
 };
