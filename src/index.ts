@@ -8,7 +8,7 @@ import getDateSuffix from "./utils/getDateSuffix";
 import getDay from "./utils/getDay";
 import getMonth from "./utils/getMonth";
 import readline from "readline";
-import { COLUMN_INFO, GEOPHYSICAL_DATA, TIME } from "./utils/constants";
+import { COLUMN_INFO, TIME } from "./utils/constants";
 
 /**
  * Creates an interface that allows the user to interact with the terminal, and allows us to read user input.
@@ -54,8 +54,7 @@ terminal.question("[process] Enter a year: ", (year: string): void => {
                  * @type {string[]}
                  */
                 const results: string[] = res.result // The result property from the received JSON object
-                    .replaceAll(GEOPHYSICAL_DATA, "") // Removes unecessary text
-                    .replaceAll(COLUMN_INFO, "") // Also removes unecessary text
+                    .replaceAll(COLUMN_INFO, "") // removes unecessary text
                     .slice(3767) // Also removes uncessary text
                     .replaceAll(` ${TIME}`, "") // Removes the time so it makes it easier for us to organise the dates and S-T-Os
                     .replaceAll(/\s{2,}/g, " ") // Removes extra spaces and keeps single whitespaces also for easy organisation
