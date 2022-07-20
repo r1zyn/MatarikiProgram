@@ -33,7 +33,7 @@ The program will request you enter a valid year (meaning a 4 digit year present 
 TypeScript files will be compiled to the `build` directory (only generated once `npm run program` or `yarn program` is executed).
 
 ## Thesis
-According to [https://www.mbie.govt.nz](https://www.mbie.govt.nz/assets/matariki-dates-2022-to-2052-matariki-advisory-group.pdf ), there are a number of common principles and approaches that are universal in identifying the correct time to celebrate the Māori New Year.  
+According to [https://www.mbie.govt.nz](https://www.mbie.govt.nz/assets/matariki-dates-2022-to-2052-matariki-advisory-group.pdf) (please note date guessing accuracy was tested using data from this PDF), there are a number of common principles and approaches that are universal in identifying the correct time to celebrate the Māori New Year.  
 
 * The beginning of the New Year occurs in mid-winter
 * It is marked by the heliacal rising of a star
