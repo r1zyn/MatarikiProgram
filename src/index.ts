@@ -124,7 +124,7 @@ terminal.question("[process] Enter a year: ", (year: string): void => {
                 const date: Date = new Date(Date.parse(closest.date)); // Uses the Date.parse() method to parse the date string
 
                 console.log("\n=============================================[ Results ]=============================================");
-                console.log(`The closest S-T-O is ${closest.sto}°, which occurs on ${getDay(date.getDay())} ${date.getDate()}${getDateSuffix(date.getDate())} ${getMonth(date.getMonth())} ${date.getFullYear()} at 06:00 am`); // Logs the date with the closest S-T-O to 90 degrees
+                console.log(`The closest S-T-O is ${closest.sto}°, which occurs on ${getDay(date.getDay())} ${date.getDate()}${getDateSuffix(date.getDate())} ${getMonth(date.getMonth())} ${date.getFullYear()}`); // Logs the date with the closest S-T-O to 90 degrees
                 
                 /**
                  * The closest Friday to the date with the closest S-T-O
@@ -133,7 +133,7 @@ terminal.question("[process] Enter a year: ", (year: string): void => {
                  */
                 const holiday: Date = closestFriday(date);
 
-                console.log(`This means the Matariki public holiday will occur on ${getDay(holiday.getDay())} ${holiday.getDate()}${getDateSuffix(holiday.getDate())} ${getMonth(holiday.getMonth())} ${holiday.getFullYear()} at 06:00 am`); // Logs the holiday date
+                console.log(`This means the Matariki public holiday will occur on ${getDay(holiday.getDay())} ${holiday.getDate()}${getDateSuffix(holiday.getDate())} ${getMonth(holiday.getMonth())} ${holiday.getFullYear()}`); // Logs the holiday date
 
                 fs.writeFileSync("output.txt", results.join("\n")); // Writes the raw data to a text file
                 console.log(`You can view the raw data in ${process.cwd()}\\output.txt (hold ctrl and click on the file text)`);
