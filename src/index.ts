@@ -8,7 +8,7 @@ import getDateSuffix from "./utils/getDateSuffix";
 import getDay from "./utils/getDay";
 import getMonth from "./utils/getMonth";
 import readline from "readline";
-import { COLUMN_INFO, TIME } from "./utils/constants";
+import { COLUMN_INFO, TIME } from "./constants";
 
 /**
  * Creates an interface that allows the user to interact with the terminal, and allows us to read user input.
