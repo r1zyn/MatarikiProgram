@@ -2,8 +2,8 @@
 name: Suggestion
 about: Suggest an idea for this project
 title: ''
-labels: ''
-assignees: ''
+labels: suggestion
+assignees: r1zyn
 
 ---
 
