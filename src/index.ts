@@ -27,8 +27,8 @@ const options: TableOptions = {
     leftPad: 0, // How many spaces to pad the left side of the table
     columns: [
         { field: "id", name: chalk.cyan("🆔 ID") }, // The ID column
-        { field: "date", name: chalk.blueBright("📅 Date (UTC +12, NZST)") }, // The date column
-        { field: "time", name: chalk.greenBright("⏰ Time (UTC +12, NZST)") }, // The time column
+        { field: "date", name: chalk.blueBright("📅 Date (UTC+12, NZST)") }, // The date column
+        { field: "time", name: chalk.greenBright("⏰ Time (UTC+12, NZST)") }, // The time column
         { field: "sto", name: chalk.yellow("🌙 S-T-O (Sun-Target-Observer) Angle") } // The S-T-O column
     ]
 };
