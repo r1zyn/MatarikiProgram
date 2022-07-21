@@ -6,7 +6,7 @@ This program was written for the 2022 Hackathon.
 
 ## Releases
 
-* [v1.0.1](https://github.com/r1zyn/MatarikiProgram/releases/tag/v1.0.1)
+* [`v1.0.1` (Current release)](https://github.com/r1zyn/MatarikiProgram/releases/tag/v1.0.1)
 
 ## Installation
 [Node.js](https://nodejs.org/) v17 or higher is required. (Note: uses node-fetch v2 due to incompatibility issues with CommonJS and chalk v4.1.2 due to incompatibility issues with ES,)
