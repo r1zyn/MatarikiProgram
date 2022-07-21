@@ -28,7 +28,7 @@ yarn program
 ```
 
 ## How it works
-The program will request you enter a valid year (meaning a 4 digit year present or future) and make a `GET` request to the [JPL Horizons API](https://ssd-api.jpl.nasa.gov/doc/horizons.html) using [`node-fetch`](https://npmjs.com/package/node-fetch). The response will then have excessive text omitted and parsed to extract the needed data (it will also be written to [`output.txt`](./output.txt) for readability and program execution transparency). The program will then log a table with the data and display its predictions.
+The program will request you enter a valid year (has to be able to be converted to a number) and make a `GET` request to the [JPL Horizons API](https://ssd-api.jpl.nasa.gov/doc/horizons.html) using [`node-fetch`](https://npmjs.com/package/node-fetch). The response will then have excessive text omitted and parsed to extract the needed data (it will also be written to [`output.txt`](./output.txt) for readability and program execution transparency). The program will then log a table with the data and display its predictions.
 
 TypeScript files will be compiled to the `build` directory (only generated once `npm run program` or `yarn program` is executed).
 
