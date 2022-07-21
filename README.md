@@ -66,5 +66,14 @@ The [**phase angle**](https://en.wikipedia.org/wiki/Phase_angle_(astronomy)), or
 * [@SILentASSassinE](https://github.com/SILentASSassinE)
 * [@tommy-duan-macleans](https://github.com/tommy-duan-macleans)
 
+## Import links
+
+* [License](./LICENSE)
+* [Codeowners](.github/CODEOWNERS)
+* [Code Of Conduct](.github/CODE_OF_CONDUCT.md)
+* [Security Policy](.github/SECURITY.md)
+* [Issues](https://github.com/r1zyn/MatarikiProgram/issues)
+* [Pull Requests](https://github.com/r1zyn/MatarikiProgram/pulls)
+
 ## License
 :copyright: 2022 EV. All rights reserved. This project is licensed under the [GPL-3.0 license](./LICENSE).
