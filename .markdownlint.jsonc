@@ -1,0 +1,9 @@
+// This file can be ignored. It is only used for configuring the VSC markdown lint extension.
+{
+    "MD013": false,
+    "MD022": false,
+    "MD032": false,
+    "MD040": false,
+    "MD041": false,
+    "MD047": false
+}
