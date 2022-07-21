@@ -96,7 +96,7 @@ terminal.question("[process] Enter a year: ", (year: string): void => {
                     return {
                         id,
                         date: `${getDay(date.getDay())} ${date.getDate()}${getDateSuffix(date.getDate())} ${getMonth(date.getMonth())} ${date.getFullYear()}`,
-                        time: "06:00 am",
+                        time: `${TIME} am`,
                         sto: `${d.sto}°`
                     }; // Returning the row data
                 }));
