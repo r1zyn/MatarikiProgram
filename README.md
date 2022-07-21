@@ -74,6 +74,7 @@ The [**phase angle**](https://en.wikipedia.org/wiki/Phase_angle_(astronomy)), or
 * [Security Policy](.github/SECURITY.md)
 * [Issues](https://github.com/r1zyn/MatarikiProgram/issues)
 * [Pull Requests](https://github.com/r1zyn/MatarikiProgram/pulls)
+* [Discussions](https://github.com/r1zyn/MatarikiProgram/discussions)
 
 ## License
 :copyright: 2022 EV. All rights reserved. This project is licensed under the [GPL-3.0 license](./LICENSE).
