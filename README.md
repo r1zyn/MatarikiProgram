@@ -1,7 +1,7 @@
 # Matariki Program (by Team EV)
 
 ## About
-A program to determine when the Matariki holiday will occur written in TypeScript using the Node.js runtime and the JPL Horizons API.
+This is an open-source program to determine when the Matariki holiday will occur written in TypeScript using the Node.js runtime and the JPL Horizons API.
 This program was written for the 2022 Hackathon.
 
 ## Releases
@@ -55,6 +55,9 @@ Matariki during the lunar month of Pipiri, when the moon is in the Tangaroa peri
 
 The [**phase angle**](https://en.wikipedia.org/wiki/Phase_angle_(astronomy)), or **Sun-Target-Observer angle**, measures the angle between the Sun, target (in this case the Moon due to Matariki being related to the lunar phases) and Earth. According to the [**phase angle Wikipedia page**](https://en.wikipedia.org/wiki/Phase_angle_(astronomy)), the phase angle ranges from 0 to 180 degrees. This means a new moon happens when the S-T-O climbs to a local maximum (should be just below 180°, while 180° is a solar eclipse), and full moon when it declines to a local minimum (just above 0°, while 0° is a lunar eclipse). Therefore, the third phase of the moon the third quarter) occurs just below 90°. The rule of 19 also states that Matariki will always occur either on or after the 19th of June (and always in either June or July). Using this information, we fetched the S-T-O for every day from the 19th of June to the 31st of June. Our program finds the closest S-T-O for each date closest (and below) 90° and finds the closest Friday to that date to find the date of the Matariki holiday for the provided year. It is also known that the best time to see Matariki is just before sunrise, around 6am, which we took into consideration (the S-T-Os collected from each date are taken at 6am).
 
+## Contributing
+See the [contributing guide](.github/CONTRIBUTING.md).
+
 ## Todo
 
 * Resolve <https://github.com/r1zyn/MatarikiProgram/issues/2>
@@ -72,6 +75,7 @@ The [**phase angle**](https://en.wikipedia.org/wiki/Phase_angle_(astronomy)), or
 * [Codeowners](.github/CODEOWNERS)
 * [Code Of Conduct](.github/CODE_OF_CONDUCT.md)
 * [Security Policy](.github/SECURITY.md)
+* [Contributing Guide](.github/CONTRIBUTING.md)
 * [Issues](https://github.com/r1zyn/MatarikiProgram/issues)
 * [Pull Requests](https://github.com/r1zyn/MatarikiProgram/pulls)
 * [Discussions](https://github.com/r1zyn/MatarikiProgram/discussions)
