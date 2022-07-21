@@ -1,4 +1,4 @@
-# (WIP) Matariki Program (by Team EV)
+# Matariki Program (by Team EV)
 
 ## About
 A program to determine when the Matariki holiday will occur written in TypeScript using the Node.js runtime and the JPL Horizons API.
