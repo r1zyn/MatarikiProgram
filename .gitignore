@@ -4,7 +4,9 @@ node_modules/
 # Compilation
 logs/
 build/
-output.txt
 
 # Yarn
 yarn-error.log
+
+# Extra
+*.txt
