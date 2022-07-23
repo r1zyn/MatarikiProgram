@@ -2,7 +2,7 @@
  * Time constant (determines what time of day to fetch S-T-O from)
  * @type {string}
  */
-export const TIME: string = "06:00";
+export const TIME: string = "05:20";
 
 /**
  * Unecessary column information text from the API response result propety.
