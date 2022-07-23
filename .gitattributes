@@ -1,0 +1,14 @@
+*.ts linguist-detectable=true
+*.ts linguist-vendored=false
+*.ts linguist-generated=false
+*.ts linguist-documentation=false
+
+*.json linguist-detectable=true
+*.json linguist-vendored=false
+*.json linguist-generated=false
+*.json linguist-documentation=false
+
+*.jsonc linguist-detectable=true
+*.jsonc linguist-vendored=false
+*.jsonc linguist-generated=false
+*.jsonc linguist-documentation=false
