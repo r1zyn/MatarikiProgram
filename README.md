@@ -1,4 +1,4 @@
-# Matariki Program (by Team EV)
+# [Archived Version] Matariki Program (by Team EV)
 
 ## About
 This is an open-source program to determine when the Matariki holiday will occur written in TypeScript using the Node.js runtime and the JPL Horizons API.
@@ -37,7 +37,7 @@ The program will request you enter a valid year (has to be able to be converted 
 
 TypeScript files will be compiled to the `build` directory (only generated once `npm run program` or `yarn program` is executed).
 
-## Thesis
+## Method
 According to [https://www.mbie.govt.nz](https://www.mbie.govt.nz/assets/matariki-dates-2022-to-2052-matariki-advisory-group.pdf) (please note date guessing accuracy was tested using data from this PDF), there are a number of common principles and approaches that are universal in identifying the correct time to celebrate the Māori New Year.  
 
 * The beginning of the New Year occurs in mid-winter
