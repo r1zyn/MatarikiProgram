@@ -43,11 +43,8 @@
     "license": "GPL-3.0",
     "dependencies": {
         "chalk": "4.1.2",
-        "chalk-table": "^1.0.2",
         "date-chinese": "^2.1.4",
-        "node-fetch": "2",
-        "nodemon": "^2.0.19",
-        "ts-node": "^10.8.2"
+        "nodemon": "^2.0.19"
     },
     "devDependencies": {
         "@types/node": "^18.0.3",
