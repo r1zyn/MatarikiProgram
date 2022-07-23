@@ -2,7 +2,7 @@
     "name": "matarikiprogram",
     "version": "1.0.2",
     "private": false,
-    "description": "A program to determine when the Matariki holiday will occur written in TypeScript using the Node.js runtime and the JPL Horizons API.",
+    "description": "A program to determine when the Matariki holiday will occur written in TypeScript using the Node.js runtime.",
     "main": "build/index.js",
     "scripts": {
         "dev": "nodemon",

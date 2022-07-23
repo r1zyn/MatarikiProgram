@@ -1,7 +1,7 @@
 # Matariki Program (by Team EV)
 
 ## About
-This is an open-source program to determine when the Matariki holiday will occur written in TypeScript using the Node.js runtime and the JPL Horizons API.
+This is an open-source program to determine when the Matariki holiday will occur written in TypeScript using the Node.js runtime.
 This program was written for the 2022 Hackathon.
 
 ## Releases
@@ -47,7 +47,7 @@ See the [contributing guide](.github/CONTRIBUTING.md).
 
 ## Todo
 
-* Resolve <https://github.com/r1zyn/MatarikiProgram/issues/2>
+* Complete project
 
 ## Contributors
 
