@@ -6,7 +6,8 @@ This program was written for the 2022 Hackathon.
 
 ## Releases
 
-* [`v1.0.2` (Current release)](https://github.com/r1zyn/MatarikiProgram/releases/tag/v1.0.2)
+* [`v1.0.3 (Current Release)`](https://github.com/r1zyn/MatarikiProgram/releases/tag/v1.0.3)
+* [`v1.0.2`](https://github.com/r1zyn/MatarikiProgram/releases/tag/v1.0.2)
 * [`v1.0.1`](https://github.com/r1zyn/MatarikiProgram/releases/tag/v1.0.1)
 
 ## Installation

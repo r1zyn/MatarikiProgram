@@ -1,6 +1,6 @@
 {
     "name": "matarikiprogram",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "private": false,
     "description": "A program to determine when the Matariki holiday will occur written in TypeScript using the Node.js runtime.",
     "main": "build/index.js",
