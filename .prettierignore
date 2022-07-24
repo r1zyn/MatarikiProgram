@@ -2,6 +2,8 @@
 .husky
 .vscode
 build
+coverage
+testing
 node_modules
 .editorconfig
 .eslintignore

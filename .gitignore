@@ -4,6 +4,7 @@ node_modules/
 # Compilation
 logs/
 build/
+coverage/
 
 # Yarn
 yarn-error.log

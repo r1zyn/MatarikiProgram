@@ -1,5 +1,5 @@
-import type { MatarikiResult } from "../types";
-import getMatariki from "./getMatariki";
+import type { MatarikiResult } from "../src/types";
+import getMatariki from "../src/utils/getMatariki";
 
 describe("Get the date for the Matariki public holiday", (): void => {
     let mockPointer: Date;

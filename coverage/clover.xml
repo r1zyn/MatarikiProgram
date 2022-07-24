@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1658657663335" clover="3.2.0">
-  <project timestamp="1658657663335" name="All files">
+<coverage generated="1658660631774" clover="3.2.0">
+  <project timestamp="1658660631775" name="All files">
     <metrics statements="15" coveredstatements="14" conditionals="5" coveredconditionals="3" methods="3" coveredmethods="3" elements="23" coveredelements="20" complexity="0" loc="15" ncloc="15" packages="1" files="2" classes="2"/>
     <file name="closestFriday.ts" path="C:\Users\ascen\OneDrive\Documents\MatarikiProgram\src\utils\closestFriday.ts">
       <metrics statements="9" coveredstatements="8" conditionals="3" coveredconditionals="2" methods="2" coveredmethods="2"/>
