@@ -16,7 +16,7 @@ describe("Get the date for the Matariki public holiday", (): void => {
         expect(pointer.toLocaleDateString()).toBe(
             mockPointer.toLocaleDateString()
         );
-        
+
         expect(holiday.toLocaleDateString()).toBe(
             mockHoliday.toLocaleDateString()
         );
