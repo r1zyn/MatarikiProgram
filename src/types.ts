@@ -1,12 +1,19 @@
 /**
- * Interface for the API response received from the Horizons API.
- * @property {string} result The stringified data from the API
+ * Interface for the data returned from the `getMatariki` function.
+ * @property {Date} holiday The Matariki public holiday date
+ * @property {Date} pointer The pointer date
  * @interface
  */
-export interface APIResponse {
+export interface MatarikiResult {
     /**
-     * The result property containing the stringified data.
-     * @type {string}
+     * Pointer date we can use to predict the Matariki public holiday.
+     * @type {Date}
      */
-    result: string;
+    pointer: Date;
+
+    /**
+     * Date object representing the Matariki public holiday.
+     * @type {Date}
+     */
+    holiday: Date;
 }

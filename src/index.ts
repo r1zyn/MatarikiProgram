@@ -1,6 +1,6 @@
+import type { MatarikiResult } from "./types";
 import chalk from "chalk";
-import closestFriday from "./utils/closestFriday";
-import lunar from "lunar";
+import getMatariki from "./utils/getMatariki";
 import parseDate from "./utils/parseDate";
 import readline from "readline";
 
@@ -23,18 +23,7 @@ terminal.question(
             ); // If the year cannot be parsed to a number it won't be considered as a valid year, this is to prevent the program from crashing during fetching
             process.exit(1); // Exits the process
         } else {
-            /**
-             * Pointer date we can use to predict the Matariki public holiday.
-             * @type {Date}
-             */
-            const pointer: Date = lunar([parseInt(year), 4, 25, true]).toDate();
-
-            /**
-             * Date object representing the Matariki public holiday.
-             * @type {Date}
-             */
-            const holiday: Date =
-                pointer.getDay() === 5 ? pointer : closestFriday(pointer);
+            const { holiday, pointer }: MatarikiResult = getMatariki(year); // Gets the Matariki public holiday for the given year
 
             console.log(
                 `${chalk.blue("[program]")} The pointer date is ${chalk.yellow(
