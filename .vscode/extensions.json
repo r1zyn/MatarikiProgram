@@ -5,6 +5,7 @@
         "dbaeumer.vscode-eslint",
         "ldez.ignore-files",
         "DavidAnson.vscode-markdownlint",
-        "mariusschulz.yarn-lock-syntax"
+        "mariusschulz.yarn-lock-syntax",
+        "ritwickdey.LiveServer"
     ]
 }
