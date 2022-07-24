@@ -13,11 +13,11 @@ describe("Get the date for the Matariki public holiday", (): void => {
     test("2022", (): void => {
         const { pointer, holiday }: MatarikiResult = getMatariki("2022");
 
-        expect(pointer.toLocaleDateString()).toBe(
+        expect<string>(pointer.toLocaleDateString()).toBe<string>(
             mockPointer.toLocaleDateString()
         );
 
-        expect(holiday.toLocaleDateString()).toBe(
+        expect<string>(holiday.toLocaleDateString()).toBe<string>(
             mockHoliday.toLocaleDateString()
         );
     });

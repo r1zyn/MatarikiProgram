@@ -22,7 +22,7 @@ describe("Get the closest Friday for a given date", (): void => {
 
     test("2022", (): void => {
         mockDates.forEach((date: Date, index: number): void => {
-            expect(closestFriday(date).toLocaleDateString()).toBe(
+            expect<string>(closestFriday(date).toLocaleDateString()).toBe<string>(
                 fridays[index].toLocaleDateString()
             );
         });
