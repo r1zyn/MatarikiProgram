@@ -9,7 +9,7 @@ export interface APIResponse {
      * @type {string}
      */
     result: string;
-};
+}
 
 /**
  * Options for the `parseDate` function.
@@ -22,4 +22,4 @@ export interface DateOptions {
     day: number;
     month: number;
     year: number;
-};
+}

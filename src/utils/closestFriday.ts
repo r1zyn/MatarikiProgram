@@ -10,7 +10,7 @@ export default function closestFriday(fromDate: Date): Date {
     returnValue.setDate(returnValue.getDate() + difference);
 
     return returnValue;
-};
+}
 
 /**
  * Function that gets the difference between two days.
@@ -19,8 +19,12 @@ export default function closestFriday(fromDate: Date): Date {
  * @param {number} weekLength The length of a week
  * @returns {number}
  */
-export function getDifferenceBetweenDays(start: number, end: number, weekLength: number = 7): number {
+export function getDifferenceBetweenDays(
+    start: number,
+    end: number,
+    weekLength: number = 7
+): number {
     const a: number = start - end;
     const b: number = weekLength - (start - end - 1);
-    return (a > b) ? - Math.min(a, b) : Math.min(a, b);
-};
+    return a > b ? -Math.min(a, b) : Math.min(a, b);
+}

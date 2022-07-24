@@ -8,4 +8,4 @@ import { DateOptions } from "../types";
  */
 export default function parseDate({ day, month, year }: DateOptions): Date {
     return new Date(Date.parse(`${year}-${month}-${day}`));
-};
+}
