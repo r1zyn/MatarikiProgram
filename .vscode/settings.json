@@ -21,8 +21,6 @@
     "typescript.preferences.quoteStyle": "double",
     "json.format.enable": true,
     "bashBeautify.tabSize": 4,
-    "prisma.fileWatcher": true,
-    "prettier.useEditorConfig": true,
     "[javascript]": {
         "editor.defaultFormatter": "vscode.typescript-language-features"
     },
