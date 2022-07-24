@@ -17,6 +17,6 @@ export default function getMonth(month: number): string {
         case 9: return "October";
         case 10: return "November";
         case 11: return "December";
-        default: return "";
+        default: return "Unknown";
     }
 }

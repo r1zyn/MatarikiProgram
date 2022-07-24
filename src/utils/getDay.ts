@@ -1,7 +1,7 @@
 /**
  * Function that maps the day of the week to the corresponding day name.
  * @param {number} day The day of the week (0-6)
- * @returns string
+ * @returns {string}
  */
 export default function getDay(day: number): string {
     switch (day) {
@@ -12,6 +12,6 @@ export default function getDay(day: number): string {
         case 4: return "Thursday";
         case 5: return "Friday";
         case 6: return "Saturday";
-        default: return "";
+        default: return "Unknown";
     }
 }

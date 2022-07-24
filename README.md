@@ -28,15 +28,15 @@ If you prefer to use [`npm`](https://npmjs.com/), be sure to delete [`yarn.lock`
 The script for running the program is defined in the `scripts` property in [`package.json`](./package.json)
 
 ```cmd
-npm run program
+npm run start
 # or
-yarn program
+yarn start
 ```
 
 ## How it works
 The program will request you enter a valid year (has to be able to be converted to a number) and will in result output its predictions of when the Matariki holiday for the given year will be.
 
-TypeScript files will be compiled to the `build` directory (only generated once `npm run program` or `yarn program` is executed).
+TypeScript files will be compiled to the `build` directory (only generated once `npm run start` or `yarn start` is executed).
 
 ## Method
 To see the original method, view the [`archived`](https://github.com/r1zyn/MatarikiProgram/tree/archived) branch.
