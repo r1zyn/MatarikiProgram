@@ -34,9 +34,16 @@ npm run start
 yarn start
 ```
 
+Example:
+![image](https://user-images.githubusercontent.com/72182515/180643996-deeb54fc-20aa-48b6-9977-4ccfa05cef6b.png)
+
+
 ## Testing
 This program uses [`jest`](https://jestjs.io/) for program testing. To run tests, run `yarn test` or `npm test`. For coverage, run `yarn test:coverage` or `npm test:coverage`.
 To view the Icov reports, you can open [`index.html`](./coverage/lcov-report/index.html) in a browser (VSC Live Server extension recommended)
+You should see something like this:
+![image](https://user-images.githubusercontent.com/72182515/180643942-11d6d3d7-ab6a-420e-ab43-dcdde7dee812.png)
+
 
 ## How it works
 The program will request you enter a valid year (has to be able to be converted to a number) and will in result output its predictions of when the Matariki holiday for the given year will be.
