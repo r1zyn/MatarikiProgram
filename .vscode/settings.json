@@ -1,0 +1,44 @@
+{
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 1000,
+    "files.insertFinalNewline": false,
+    "files.trimFinalNewlines": true,
+    "editor.defaultFormatter": "vscode.typescript-language-features",
+    "editor.formatOnSave": true,
+    "editor.maxTokenizationLineLength": 100000,
+    "extensions.ignoreRecommendations": false,
+    "editor.formatOnType": true,
+    "editor.formatOnPaste": true,
+    "javascript.format.enable": true,
+    "javascript.format.semicolons": "insert",
+    "javascript.format.placeOpenBraceOnNewLineForFunctions": false,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "javascript.preferences.quoteStyle": "double",
+    "typescript.format.enable": true,
+    "typescript.format.semicolons": "insert",
+    "typescript.format.placeOpenBraceOnNewLineForFunctions": false,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "typescript.preferences.quoteStyle": "double",
+    "json.format.enable": true,
+    "bashBeautify.tabSize": 4,
+    "prisma.fileWatcher": true,
+    "prettier.useEditorConfig": true,
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[editorconfig]": {
+        "editor.defaultFormatter": "EditorConfig.EditorConfig"
+    },
+    "[markdown]": {
+        "editor.defaultFormatter": "vscode.markdown-language-features"
+    },
+    "[shellscript]": {
+        "editor.defaultFormatter": "shakram02.bash-beautify"
+    }
+}

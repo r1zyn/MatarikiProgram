@@ -1,5 +1,6 @@
 .github
 .husky
+.vscode
 build
 node_modules
 .editorconfig
