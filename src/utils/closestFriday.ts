@@ -24,7 +24,9 @@ export function getDifferenceBetweenDays(
     end: number,
     weekLength: number = 7
 ): number {
-    const a: number = start - end;
-    const b: number = weekLength - (start - end - 1);
-    return a > b ? -Math.min(a, b) : Math.min(a, b);
+    if (end <= 1) {
+        return -((weekLength - start) + end);
+    } else {
+        return start - end;
+    }
 }

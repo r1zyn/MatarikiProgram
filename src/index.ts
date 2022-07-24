@@ -1,11 +1,8 @@
-import { CalendarChinese, GregorianDate } from "date-chinese";
 import chalk from "chalk";
 import closestFriday from "./utils/closestFriday";
-import getDay from "./utils/getDay";
-import getDateSuffix from "./utils/getDateSuffix";
-import getMonth from "./utils/getMonth";
-import readline from "readline";
+import lunar from "lunar";
 import parseDate from "./utils/parseDate";
+import readline from "readline";
 
 /**
  * Creates an interface that allows the user to interact with the terminal, and allows us to read user input.
@@ -27,53 +24,29 @@ terminal.question(
             process.exit(1); // Exits the process
         } else {
             /**
-             * Settings for the Chinese Calendar.
-             * @type {number[]}
-             */
-            const settings: number[] = [60, parseInt(year), 4, 1, 23];
-
-            /**
-             * Chinese Lunar Calendar date representing the Matariki public holiday in the Gregorian calendar.
-             * @type {GregorianDate}
-             */
-            const chineseDate: GregorianDate = new CalendarChinese([ ...settings ]).toGregorian(parseInt(year));
-
-            /**
-             * Date representing the first day of the Tangaroa period.
+             * Pointer date we can use to predict the Matariki public holiday.
              * @type {Date}
              */
-            const tangaroaStartDate: Date = parseDate(chineseDate);
+            const pointer: Date = lunar([parseInt(year), 4, 25, true]).toDate();
 
             /**
              * Date object representing the Matariki public holiday.
              * @type {Date}
              */
-            const holiday: Date = closestFriday(tangaroaStartDate);
+            const holiday: Date =
+                pointer.getDay() === 5 ? pointer : closestFriday(pointer);
 
             console.log(
-                `${chalk.blue("[program]")} The first day of the ${chalk.yellow(
-                    "Tangaroa"
-                )} period is ${chalk.yellow(
-                    `${getDay(
-                        tangaroaStartDate.getDay()
-                    )} ${tangaroaStartDate.getDate()}${getDateSuffix(
-                        tangaroaStartDate.getDate()
-                    )} ${getMonth(
-                        tangaroaStartDate.getMonth()
-                    )} ${tangaroaStartDate.getFullYear()}`
+                `${chalk.blue("[program]")} The pointer date is ${chalk.yellow(
+                    parseDate(pointer)
                 )}`
-            );
+            ); // Log the pointer date
+
             console.log(
                 `${chalk.blue("[program]")} The ${chalk.cyan(
                     "Matariki public holiday"
-                )} will occur on ${chalk.cyan(
-                    `${getDay(
-                        holiday.getDay()
-                    )} ${holiday.getDate()}${getDateSuffix(
-                        holiday.getDate()
-                    )} ${getMonth(holiday.getMonth())} ${holiday.getFullYear()}`
-                )}`
-            ); // Logs the holiday date
+                )} will occur on ${chalk.cyan(parseDate(holiday))}`
+            ); // Log the holiday date
         }
 
         terminal.close(); // Ends the terminal interaction

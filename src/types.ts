@@ -10,16 +10,3 @@ export interface APIResponse {
      */
     result: string;
 }
-
-/**
- * Options for the `parseDate` function.
- * @property {number} day The day of the month
- * @property {number} month The month of the year
- * @property {number} year The year
- * @interface
- */
-export interface DateOptions {
-    day: number;
-    month: number;
-    year: number;
-}
