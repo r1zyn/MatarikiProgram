@@ -25,7 +25,7 @@ export function getDifferenceBetweenDays(
     weekLength: number = 7
 ): number {
     if (end <= 1) {
-        return -((weekLength - start) + end);
+        return -(weekLength - start + end);
     } else {
         return start - end;
     }
