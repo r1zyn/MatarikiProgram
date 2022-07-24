@@ -27,16 +27,16 @@ terminal.question(
             process.exit(1); // Exits the process
         } else {
             /**
+             * Settings for the Chinese Calendar.
+             * @type {number[]}
+             */
+            const settings: number[] = [60, parseInt(year), 4, 1, 23];
+
+            /**
              * Chinese Lunar Calendar date representing the Matariki public holiday in the Gregorian calendar.
              * @type {GregorianDate}
              */
-            const chineseDate: GregorianDate = new CalendarChinese(
-                60,
-                parseInt(year),
-                4,
-                1,
-                23
-            ).toGregorian(parseInt(year));
+            const chineseDate: GregorianDate = new CalendarChinese([ ...settings ]).toGregorian(parseInt(year));
 
             /**
              * Date representing the first day of the Tangaroa period.
