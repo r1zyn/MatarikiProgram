@@ -4,6 +4,10 @@
  * @returns {Date}
  */
 export default function closestFriday(fromDate: Date): Date {
+    if (fromDate.getMonth() === 5 && fromDate.getDate() < 19) {
+        fromDate.setDate(fromDate.getDate() + 7);
+    }
+    
     const returnValue: Date = new Date(fromDate);
 
     const difference: number = getDifferenceBetweenDays(5, fromDate.getDay());
