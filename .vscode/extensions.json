@@ -1,11 +1,12 @@
 {
     "recommendations": [
-        "EditorConfig.EditorConfig",
+        "editorconfig.editorconfig",
         "esbenp.prettier-vscode",
         "dbaeumer.vscode-eslint",
         "ldez.ignore-files",
-        "DavidAnson.vscode-markdownlint",
+        "davidanson.vscode-markdownlint",
         "mariusschulz.yarn-lock-syntax",
-        "ritwickdey.LiveServer"
+        "ritwickdey.liveserver",
+        "firsttris.vscode-jest-runner"
     ]
 }

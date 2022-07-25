@@ -7,7 +7,7 @@ export default function closestFriday(fromDate: Date): Date {
     if (fromDate.getMonth() === 5 && fromDate.getDate() < 19) {
         fromDate.setDate(fromDate.getDate() + 7);
     }
-    
+
     const returnValue: Date = new Date(fromDate);
 
     const difference: number = getDifferenceBetweenDays(5, fromDate.getDay());
@@ -26,11 +26,22 @@ export default function closestFriday(fromDate: Date): Date {
 export function getDifferenceBetweenDays(
     start: number,
     end: number,
-    weekLength: number = 7
+    // weekLength: number = 7
 ): number {
-    if (end <= 1) {
-        return -(weekLength - start + end);
+    const weekends: number[] = [0, 6];
+    if (weekends.includes(end)) {
+        if (end === 0) {
+            end = 7;
+        }
+
+        return -(end - start);
     } else {
         return start - end;
     }
+
+    // if (end <= 1) {
+    //     return -(weekLength - start + end);
+    // } else {
+    //     return start - end;
+    // }
 }
