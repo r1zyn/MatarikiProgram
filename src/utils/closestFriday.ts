@@ -25,7 +25,7 @@ export default function closestFriday(fromDate: Date): Date {
  */
 export function getDifferenceBetweenDays(
     start: number,
-    end: number,
+    end: number
     // weekLength: number = 7
 ): number {
     const weekends: number[] = [0, 6];
