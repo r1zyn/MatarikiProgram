@@ -6,7 +6,7 @@ describe("Get the date for the Matariki public holiday", (): void => {
     let mockHoliday: Date;
 
     beforeEach((): void => {
-        mockPointer = new Date(2022, 5, 22);
+        mockPointer = new Date(2022, 5, 20);
         mockHoliday = new Date(2022, 5, 24);
     });
 
