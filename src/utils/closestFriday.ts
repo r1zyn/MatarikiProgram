@@ -25,22 +25,20 @@ export default function closestFriday(fromDate: Date): Date {
 }
 
 /**
- * Function that gets the difference between two days.  
+ * Function that gets the difference between two days.
  * @param {number} start The starting day
  * @param {number} end The ending day
  * @returns {number}
  */
-export function getDifferenceBetweenDays(
-    start: number,
-    end: number
-): number {
+export function getDifferenceBetweenDays(start: number, end: number): number {
     /**
      * The weekend days for Date.getDay().
      * @type {number[]}
      */
     const weekends: number[] = [0, 6];
 
-    if (weekends.includes(end)) { // Checks if the day is a weekend, as if the first day of the Tangaroa period is a weekend, Matariki will be the Friday before, and vice-versa
+    if (weekends.includes(end)) {
+        // Checks if the day is a weekend, as if the first day of the Tangaroa period is a weekend, Matariki will be the Friday before, and vice-versa
         if (end === 0) {
             end = 7; // Change Sunday to index of 7 so we can get the day difference
         }
