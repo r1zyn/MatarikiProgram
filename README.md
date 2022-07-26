@@ -40,12 +40,15 @@ Example:
 
 ## Testing
 This program uses [`jest`](https://jestjs.io/) for program testing. To run tests, run `yarn test` or `npm test`. For coverage, run `yarn test:coverage` or `npm test:coverage`.
+Tetsing files (`.test.ts` files) are located within the [`test`](./test/) directory.
 To view the Icov reports, you can open [`index.html`](./coverage/lcov-report/index.html) in a browser (VSC Live Server extension recommended)
 You should see something like this:
 ![image](https://user-images.githubusercontent.com/72182515/180643942-11d6d3d7-ab6a-420e-ab43-dcdde7dee812.png)
 
 ## How it works
 The program will request you enter a valid year (has to be able to be converted to a number) and will in result output its predictions of when the Matariki holiday for the given year will be.
+
+The program determines its predictions by converting the 23rd day of the 4th month of the provided year in the Chinese lunar calendar to its Gregorian Calendar equivalent (the "pointer" date as referred to throughout the program) by calling the [`getMatariki()`](./src/utils/getMatariki.ts) function, and then finding the closest Friday, the date of the Matariki public holiday, by calling the [`closestFriday()`](./src/utils/clsoestFriday.ts) function. The theory behind this is stated in the [**method**](#method) section.
 
 TypeScript files will be compiled to the `build` directory (only generated once `npm start` or `yarn start` is executed).
 
