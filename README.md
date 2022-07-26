@@ -48,7 +48,7 @@ You should see something like this:
 ## How it works
 The program will request you enter a valid year (has to be able to be converted to a number) and will in result output its predictions of when the Matariki holiday for the given year will be.
 
-The program determines its predictions by converting the 23rd day of the 4th month of the provided year in the Chinese lunar calendar to its Gregorian Calendar equivalent (the "pointer" date as referred to throughout the program) by calling the [`getMatariki()`](./src/utils/getMatariki.ts) function, and then finding the closest Friday, the date of the Matariki public holiday, by calling the [`closestFriday()`](./src/utils/clsoestFriday.ts) function. The theory behind this is stated in the [**method**](#method) section.
+The program determines its predictions by converting the 23rd day of the 4th month of the provided year in the Chinese lunar calendar to its Gregorian Calendar equivalent (the "pointer" date as referred to throughout the program) by calling the [`getMatariki()`](./src/utils/getMatariki.ts) function, and then finding the closest Friday, the date of the Matariki public holiday, by calling the [`closestFriday()`](./src/utils/closestFriday.ts) function. The theory behind this is stated in the [**method**](#method) section.
 
 TypeScript files will be compiled to the `build` directory (only generated once `npm start` or `yarn start` is executed).
 
