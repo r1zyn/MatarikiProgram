@@ -4,6 +4,11 @@
 This is an open-source program to determine when the Matariki holiday will occur written in TypeScript using the Node.js runtime.
 This program was written for the 2022 Hackathon.
 
+## Submission Details
+* [Video Recording](https://youtu.be/V66sSKi3eG4) (poor quality since recorder settings suddenly went haywire)
+* [List of years 1990 - 2990](./years.txt)
+* Screenshot: ![https://cdn.discordapp.com/attachments/962150636953169940/1002145936702713946/unknown.png](Screenshot of generated years)
+
 ## Releases
 
 * [`v2.0.0 (Current release)`](https://github.com/r1zyn/MatarikiProgram/releases/tag/v2.0.0)
