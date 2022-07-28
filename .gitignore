@@ -8,6 +8,3 @@ coverage/
 
 # Yarn
 yarn-error.log
-
-# Extra
-*.txt
