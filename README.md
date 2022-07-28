@@ -4,7 +4,7 @@
 This is an open-source program to determine when the Matariki holiday will occur written in TypeScript using the Node.js runtime.
 This program was written for the 2022 Hackathon.
 
-Note: After submission we realize the luamnr conversion may have not been the best options for years beyond 2100. Looking in [getMatariki.ts](./src/utils/getMatariki.ts), we have realized the commented code using the moon phase method (finding the new moon and adding 22 days after) would have been a more accurate and consistent method.
+Note: After submission we realise the luamnr conversion may have not been the best option for years beyond 2100. Looking in [getMatariki.ts](./src/utils/getMatariki.ts), we have realised the commented code using the moon phase method (finding the new moon and adding 22 days after) would have been a more accurate and consistent method. Our original method using the JPL Horizons API can be found in the [`archived`](https://github.com/r1zyn/MatarikiProgram/tree/archived) branch.
 
 ## Submission Details
 * [Video Recording](https://youtu.be/V66sSKi3eG4)
